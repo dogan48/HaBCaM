@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>Login page</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+<script>
+
+$(document).ready(function(){
+  $('#Login').click(function(){
+       $.get('users/users.xml', null, function (data, textStatus) {
+           xml=data;
+            $(xml).find('user').each( function(){
+                var item = $(this);
+
+                if(item.find('username').text()==$('#username').val() && item.find('password').text()==$('#pwd').val())
+                {
+					sessionStorage.setItem('UID', $('#username').val());
+					
+					document.location.href='live.html';
+                }
+           });
+        });
+    });
+});
+    </script>
+<body>
+	<div class="body-container">
+	  <div class="auth-page-container">
+		<div class="main-form front">
+		  <div class="main-form-inner"> 
+		  
+			<div class="engine-name">  <h1>HaBCaM</div>
+			  <div class="adm-login-row">
+				  <input class="login-input" type="text" placeholder="Username" id="username" name="username" required />
+			  </div>
+			  <div class="adm-login-row">
+				  <input class="login-input" type="password" placeholder="Password" id="pwd" name="password" required />
+			  </div>
+			  <div class="adm-login-row adm-clearfix adm-margin">
+			  
+				<input class="adm-button-action adm-float-right" id="Login" type="submit" value="Login" />
+			  </div>
+
+		  </div>
+		</div>
+	  </div>
+	</body>
+</html>

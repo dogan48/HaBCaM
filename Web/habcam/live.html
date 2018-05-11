@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>Live page</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script type="text/javascript" src="jsmpeg.min.js"></script>
+<script>
+	var data = sessionStorage.getItem('UID');
+	if(data == null)
+		document.location.href='login.html';
+</script>
+</head>
+<body>
+	<div class="auth-page-container">
+		<div class="jsmpeg" data-url="ws://192.168.43.173:8082/live" data-autoplay="true"></div>
+		<div class="jsmpeg" data-url="ws://192.168.43.173:8084/live" data-autoplay="true"></div><br />
+		<div class="jsmpeg" data-url="ws://192.168.43.173:8086/live" data-autoplay="true"></div>
+		<div class="jsmpeg" data-url="ws://192.168.43.173:8088/live" data-autoplay="true"></div>
+	</div>
+	</body>
+</html>

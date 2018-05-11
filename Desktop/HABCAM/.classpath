@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry excluding="src/" kind="src" path=""/>
+	<classpathentry exported="true" kind="lib" path="D:/javacv-platform-1.4.1-bin/javacv-bin/javacpp.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/javacv-platform-1.4.1-bin/javacv-bin/javacv.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/javacv-platform-1.4.1-bin/javacv-bin/opencv.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/javacv-platform-1.4.1-bin/javacv-bin/ffmpeg.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/javacv-platform-1.4.1-bin/javacv-bin/opencv-windows-x86.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/javacv-platform-1.4.1-bin/javacv-bin/opencv-windows-x86_64.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/javacv-platform-1.4.1-bin/javacv-bin/ffmpeg-windows-x86_64.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/javacv-platform-1.4.1-bin/javacv-bin/ffmpeg-windows-x86.jar"/>
+	<classpathentry kind="lib" path="jgoodies-forms-1.8.0.jar" sourcepath="jgoodies-forms-1.8.0-sources.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
